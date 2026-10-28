@@ -4,7 +4,7 @@
 
 A semantic cache answers a request from a stored answer when a new request is similar enough to an old one, so the model is not asked again. The danger is the near miss: "where is order 1042" is as similar to "where is order 1043" as two sentences get. The guard is one rule: if two requests name different entities they are different questions, however alike they are. This measures what that rule buys, and where it stops working.
 
-Drag the threshold, switch the guard, and the page shows the bill, the hit rate and every wrong answer word for word.
+**[The page is live.](https://broikos-nikos.github.io/semcache/)** Drag the threshold, switch the guard, and it shows the bill, the hit rate and every wrong answer word for word.
 
 ![The page: the three caches, the threshold, the bill and the wrong answers they serve](docs/semcache.png)
 
