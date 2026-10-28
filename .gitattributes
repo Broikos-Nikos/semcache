@@ -1,0 +1,4 @@
+# LF everywhere: the streams in data/ are held to their sha256, and a checkout that turned them into CRLF would fail that gate on Windows
+* text=auto eol=lf
+*.png binary
+*.jpg binary

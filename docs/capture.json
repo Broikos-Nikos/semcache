@@ -1,0 +1,11 @@
+{
+ "headline": "An entity guard lets a semantic cache cut 79.5% of the bill instead of 51.8%, until the questions name a product or a country: then it serves 453 wrong answers in 1,000.",
+ "mode": "Guard: numbers",
+ "threshold": "0.58",
+ "readout": [
+  "79.5%",
+  "78.6%",
+  "3",
+  "316"
+ ]
+}

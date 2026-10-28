@@ -1,0 +1,2625 @@
+{
+ "streams": {
+  "calibrate": {
+   "sha256": "db64e714b15652a5159d65b6d7c090deefd89d0fff5ed833714003cdb8e46b98",
+   "requests": 2000,
+   "naming": 415
+  },
+  "test": {
+   "sha256": "d8ab12be15c9b6a6c6d37216477070fd8410cb8332a7e28acc6fcd8b2b865a36",
+   "requests": 2000,
+   "naming": 353
+  },
+  "words": {
+   "sha256": "4d11cc390662930f8f6e4bc5c44c9a19f7f7249c12f1ad811a336683a436a3a1",
+   "requests": 1000,
+   "naming": 1000
+  }
+ },
+ "intents": 24,
+ "wordIntents": 3,
+ "catalog": 14,
+ "assume": {
+  "inPerM": 3,
+  "outPerM": 15,
+  "embedPerM": 0.02,
+  "charsPerToken": 4
+ },
+ "chosen": {
+  "plain": {
+   "tau": 0.92,
+   "billCut": 0.511099,
+   "hits": 989
+  },
+  "digits": {
+   "tau": 0.58,
+   "billCut": 0.777318,
+   "hits": 1522
+  },
+  "names": {
+   "tau": 0.58,
+   "billCut": 0.777318,
+   "hits": 1522
+  }
+ },
+ "test": {
+  "ceiling": {
+   "hits": 1697,
+   "hitRate": 0.8485,
+   "billCut": 0.855245
+  },
+  "atChosen": {
+   "plain": {
+    "tau": 0.92,
+    "hits": 1011,
+    "wrong": 0,
+    "entitySwaps": 0,
+    "crossIntent": 0,
+    "vetoed": 0,
+    "hitRate": 0.5055,
+    "billCut": 0.518036,
+    "samples": []
+   },
+   "digits": {
+    "tau": 0.58,
+    "hits": 1572,
+    "wrong": 3,
+    "entitySwaps": 0,
+    "crossIntent": 3,
+    "vetoed": 316,
+    "hitRate": 0.786,
+    "billCut": 0.794935,
+    "samples": [
+     {
+      "request": "unsubscribe me from the plan please",
+      "cached": "please how do i unsubscribe from emails",
+      "score": 0.597148,
+      "kind": "another question"
+     },
+     {
+      "request": "where is my refund for order 1160 ?",
+      "cached": "urgent: where is my order 1160",
+      "score": 0.679879,
+      "kind": "another question"
+     },
+     {
+      "request": "hello, where is my order 1198",
+      "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+      "score": 0.619904,
+      "kind": "another question"
+     }
+    ]
+   },
+   "names": {
+    "tau": 0.58,
+    "hits": 1571,
+    "wrong": 3,
+    "entitySwaps": 0,
+    "crossIntent": 3,
+    "vetoed": 326,
+    "hitRate": 0.7855,
+    "billCut": 0.79439,
+    "samples": [
+     {
+      "request": "unsubscribe me from the plan please",
+      "cached": "please how do i unsubscribe from emails",
+      "score": 0.597148,
+      "kind": "another question"
+     },
+     {
+      "request": "where is my refund for order 1160 ?",
+      "cached": "urgent: where is my order 1160",
+      "score": 0.679879,
+      "kind": "another question"
+     },
+     {
+      "request": "hello, where is my order 1198",
+      "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+      "score": 0.619904,
+      "kind": "another question"
+     }
+    ]
+   }
+  },
+  "at080": {
+   "plain": {
+    "tau": 0.8,
+    "hits": 1493,
+    "wrong": 160,
+    "entitySwaps": 160,
+    "crossIntent": 0,
+    "vetoed": 0,
+    "hitRate": 0.7465,
+    "billCut": 0.752836,
+    "samples": [
+     {
+      "request": "hi, refund for order #1015 has not arrived",
+      "cached": "refund for order #1181 has not arrived",
+      "score": 0.80743,
+      "kind": "another entity"
+     },
+     {
+      "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+      "cached": "when will i get the money back for order 1146",
+      "score": 0.837335,
+      "kind": "another entity"
+     },
+     {
+      "request": "where is my refund for order 1064",
+      "cached": "where is my refund for order 1146",
+      "score": 0.850112,
+      "kind": "another entity"
+     },
+     {
+      "request": "good morning, one product missing from order 1034 asap",
+      "cached": "good morning, one product missing from order 1152",
+      "score": 0.851929,
+      "kind": "another entity"
+     },
+     {
+      "request": "urgent: when will i get the money back for order 1024",
+      "cached": "when will i get the money back for order 1146",
+      "score": 0.827645,
+      "kind": "another entity"
+     },
+     {
+      "request": "good morning, one product missing from order 1126 asap",
+      "cached": "good morning, one product missing from order 1152",
+      "score": 0.858735,
+      "kind": "another entity"
+     }
+    ]
+   },
+   "digits": {
+    "tau": 0.8,
+    "hits": 1342,
+    "wrong": 0,
+    "entitySwaps": 0,
+    "crossIntent": 0,
+    "vetoed": 169,
+    "hitRate": 0.671,
+    "billCut": 0.681789,
+    "samples": []
+   },
+   "names": {
+    "tau": 0.8,
+    "hits": 1341,
+    "wrong": 0,
+    "entitySwaps": 0,
+    "crossIntent": 0,
+    "vetoed": 171,
+    "hitRate": 0.6705,
+    "billCut": 0.681244,
+    "samples": []
+   }
+  },
+  "sweep": {
+   "plain": [
+    {
+     "tau": 0.5,
+     "hits": 1887,
+     "correct": 1563,
+     "wrong": 324,
+     "entitySwaps": 315,
+     "crossIntent": 9,
+     "vetoed": 0,
+     "hitRate": 0.9435,
+     "wrongRate": 0.162,
+     "billCut": 0.945338,
+     "baseline": 9.35802,
+     "bill": 0.511526,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, order 1112 is missing an item thanks",
+       "cached": "ORDER 1146 IS MISSING AN ITEM THANK YOU!",
+       "score": 0.606245,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.52,
+     "hits": 1883,
+     "correct": 1563,
+     "wrong": 320,
+     "entitySwaps": 314,
+     "crossIntent": 6,
+     "vetoed": 0,
+     "hitRate": 0.9415,
+     "wrongRate": 0.16,
+     "billCut": 0.942956,
+     "baseline": 9.35802,
+     "bill": 0.533816,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, order 1112 is missing an item thanks",
+       "cached": "ORDER 1146 IS MISSING AN ITEM THANK YOU!",
+       "score": 0.606245,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.54,
+     "hits": 1871,
+     "correct": 1557,
+     "wrong": 314,
+     "entitySwaps": 307,
+     "crossIntent": 7,
+     "vetoed": 0,
+     "hitRate": 0.9355,
+     "wrongRate": 0.157,
+     "billCut": 0.937186,
+     "baseline": 9.35802,
+     "bill": 0.587816,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, order 1112 is missing an item thanks",
+       "cached": "ORDER 1146 IS MISSING AN ITEM THANK YOU!",
+       "score": 0.606245,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.56,
+     "hits": 1869,
+     "correct": 1556,
+     "wrong": 313,
+     "entitySwaps": 307,
+     "crossIntent": 6,
+     "vetoed": 0,
+     "hitRate": 0.9345,
+     "wrongRate": 0.1565,
+     "billCut": 0.93658,
+     "baseline": 9.35802,
+     "bill": 0.593486,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, order 1112 is missing an item thanks",
+       "cached": "ORDER 1146 IS MISSING AN ITEM THANK YOU!",
+       "score": 0.606245,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.58,
+     "hits": 1859,
+     "correct": 1552,
+     "wrong": 307,
+     "entitySwaps": 304,
+     "crossIntent": 3,
+     "vetoed": 0,
+     "hitRate": 0.9295,
+     "wrongRate": 0.1535,
+     "billCut": 0.931848,
+     "baseline": 9.35802,
+     "bill": 0.637766,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, order 1112 is missing an item thanks",
+       "cached": "ORDER 1146 IS MISSING AN ITEM THANK YOU!",
+       "score": 0.606245,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.6,
+     "hits": 1848,
+     "correct": 1547,
+     "wrong": 301,
+     "entitySwaps": 301,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.924,
+     "wrongRate": 0.1505,
+     "billCut": 0.926783,
+     "baseline": 9.35802,
+     "bill": 0.685166,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, order 1112 is missing an item thanks",
+       "cached": "ORDER 1146 IS MISSING AN ITEM THANK YOU!",
+       "score": 0.606245,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.62,
+     "hits": 1836,
+     "correct": 1538,
+     "wrong": 298,
+     "entitySwaps": 298,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.918,
+     "wrongRate": 0.149,
+     "billCut": 0.92125,
+     "baseline": 9.35802,
+     "bill": 0.736946,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.685782,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.64,
+     "hits": 1817,
+     "correct": 1529,
+     "wrong": 288,
+     "entitySwaps": 288,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.9085,
+     "wrongRate": 0.144,
+     "billCut": 0.911277,
+     "baseline": 9.35802,
+     "bill": 0.830276,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.685782,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.66,
+     "hits": 1797,
+     "correct": 1518,
+     "wrong": 279,
+     "entitySwaps": 279,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.8985,
+     "wrongRate": 0.1395,
+     "billCut": 0.901688,
+     "baseline": 9.35802,
+     "bill": 0.920006,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1152",
+       "cached": "one product missing from order 1181 please",
+       "score": 0.669387,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.685782,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.68,
+     "hits": 1762,
+     "correct": 1496,
+     "wrong": 266,
+     "entitySwaps": 266,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.881,
+     "wrongRate": 0.133,
+     "billCut": 0.884159,
+     "baseline": 9.35802,
+     "bill": 1.084046,
+     "samples": [
+      {
+       "request": "where is my refund for order 1146",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.692796,
+       "kind": "another entity"
+      },
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "urgent: where is my refund for order 1181 thank you!",
+       "score": 0.685782,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.7,
+     "hits": 1732,
+     "correct": 1480,
+     "wrong": 252,
+     "entitySwaps": 252,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.866,
+     "wrongRate": 0.126,
+     "billCut": 0.869726,
+     "baseline": 9.35802,
+     "bill": 1.219106,
+     "samples": [
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "refund for order #1220 has not arrived asap",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.788914,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.72,
+     "hits": 1698,
+     "correct": 1455,
+     "wrong": 243,
+     "entitySwaps": 243,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.849,
+     "wrongRate": 0.1215,
+     "billCut": 0.85279,
+     "baseline": 9.35802,
+     "bill": 1.377596,
+     "samples": [
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "refund for order #1220 has not arrived asap",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.788914,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.74,
+     "hits": 1663,
+     "correct": 1435,
+     "wrong": 228,
+     "entitySwaps": 228,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.8315,
+     "wrongRate": 0.114,
+     "billCut": 0.834732,
+     "baseline": 9.35802,
+     "bill": 1.546586,
+     "samples": [
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "refund for order #1220 has not arrived asap",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.788914,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.76,
+     "hits": 1617,
+     "correct": 1408,
+     "wrong": 209,
+     "entitySwaps": 209,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.8085,
+     "wrongRate": 0.1045,
+     "billCut": 0.812733,
+     "baseline": 9.35802,
+     "bill": 1.752446,
+     "samples": [
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "please change the delivery address for order 1220 asap",
+       "cached": "change the delivery address for order 1024",
+       "score": 0.766152,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "refund for order #1220 has not arrived asap",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.788914,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.78,
+     "hits": 1558,
+     "correct": 1382,
+     "wrong": 176,
+     "entitySwaps": 176,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.779,
+     "wrongRate": 0.088,
+     "billCut": 0.783897,
+     "baseline": 9.35802,
+     "bill": 2.022296,
+     "samples": [
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "refund for order #1220 has not arrived asap",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.788914,
+       "kind": "another entity"
+      },
+      {
+       "request": "urgent: when will i get the money back for order 1024",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.827645,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.8,
+     "hits": 1493,
+     "correct": 1333,
+     "wrong": 160,
+     "entitySwaps": 160,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.7465,
+     "wrongRate": 0.08,
+     "billCut": 0.752836,
+     "baseline": 9.35802,
+     "bill": 2.312966,
+     "samples": [
+      {
+       "request": "hi, refund for order #1015 has not arrived",
+       "cached": "refund for order #1181 has not arrived",
+       "score": 0.80743,
+       "kind": "another entity"
+      },
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "urgent: when will i get the money back for order 1024",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.827645,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1126 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.858735,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.82,
+     "hits": 1431,
+     "correct": 1298,
+     "wrong": 133,
+     "entitySwaps": 133,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.7155,
+     "wrongRate": 0.0665,
+     "billCut": 0.722618,
+     "baseline": 9.35802,
+     "bill": 2.595746,
+     "samples": [
+      {
+       "request": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.837335,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "urgent: when will i get the money back for order 1024",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.827645,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1126 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.858735,
+       "kind": "another entity"
+      },
+      {
+       "request": "HI, I NEED TO UPDATE THE SHIPPING ADDRESS ON ORDER #1203",
+       "cached": "please i need to update the shipping address on order #1217 ?",
+       "score": 0.827186,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.84,
+     "hits": 1363,
+     "correct": 1258,
+     "wrong": 105,
+     "entitySwaps": 105,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.6815,
+     "wrongRate": 0.0525,
+     "billCut": 0.690788,
+     "baseline": 9.35802,
+     "bill": 2.893616,
+     "samples": [
+      {
+       "request": "where is my refund for order 1064",
+       "cached": "where is my refund for order 1146",
+       "score": 0.850112,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1034 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.851929,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, one product missing from order 1126 asap",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.858735,
+       "kind": "another entity"
+      },
+      {
+       "request": "where is my refund for order 1258 ?",
+       "cached": "where is my refund for order 1146",
+       "score": 0.848526,
+       "kind": "another entity"
+      },
+      {
+       "request": "GOOD MORNING, ONE PRODUCT MISSING FROM ORDER 1297",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.891861,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, my order 1082 was incomplete",
+       "cached": "good morning, my order 1149 was incomplete",
+       "score": 0.852812,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.86,
+     "hits": 1285,
+     "correct": 1218,
+     "wrong": 67,
+     "entitySwaps": 67,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.6425,
+     "wrongRate": 0.0335,
+     "billCut": 0.651183,
+     "baseline": 9.35802,
+     "bill": 3.264236,
+     "samples": [
+      {
+       "request": "good morning, one product missing from order 1126 asap",
+       "cached": "good morning, one product missing from order 1034 asap",
+       "score": 0.877374,
+       "kind": "another entity"
+      },
+      {
+       "request": "GOOD MORNING, ONE PRODUCT MISSING FROM ORDER 1297",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.891861,
+       "kind": "another entity"
+      },
+      {
+       "request": "URGENT: WHEN WILL I GET THE MONEY BACK FOR ORDER 1082 ?",
+       "cached": "urgent: when will i get the money back for order 1024",
+       "score": 0.912153,
+       "kind": "another entity"
+      },
+      {
+       "request": "hello, when will i get the money back for order 1064 asap",
+       "cached": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "score": 0.866629,
+       "kind": "another entity"
+      },
+      {
+       "request": "please when will i get the money back for order 1087",
+       "cached": "please when will i get the money back for order 1225 please",
+       "score": 0.889144,
+       "kind": "another entity"
+      },
+      {
+       "request": "WRONG ADDRESS ON ORDER 1292, CAN YOU FIX IT ASAP",
+       "cached": "wrong address on order 1146, can you fix it asap",
+       "score": 0.872893,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.88,
+     "hits": 1210,
+     "correct": 1171,
+     "wrong": 39,
+     "entitySwaps": 39,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.605,
+     "wrongRate": 0.0195,
+     "billCut": 0.616926,
+     "baseline": 9.35802,
+     "bill": 3.584816,
+     "samples": [
+      {
+       "request": "GOOD MORNING, ONE PRODUCT MISSING FROM ORDER 1297",
+       "cached": "good morning, one product missing from order 1152",
+       "score": 0.891861,
+       "kind": "another entity"
+      },
+      {
+       "request": "URGENT: WHEN WILL I GET THE MONEY BACK FOR ORDER 1082 ?",
+       "cached": "urgent: when will i get the money back for order 1024",
+       "score": 0.912153,
+       "kind": "another entity"
+      },
+      {
+       "request": "please when will i get the money back for order 1087",
+       "cached": "please when will i get the money back for order 1225 please",
+       "score": 0.889144,
+       "kind": "another entity"
+      },
+      {
+       "request": "i need to update the shipping address on order #1226",
+       "cached": "HI, I NEED TO UPDATE THE SHIPPING ADDRESS ON ORDER #1203",
+       "score": 0.882696,
+       "kind": "another entity"
+      },
+      {
+       "request": "please wrong address on order 1255, can you fix it",
+       "cached": "please wrong address on order 1219, can you fix it",
+       "score": 0.880905,
+       "kind": "another entity"
+      },
+      {
+       "request": "hey wrong address on order 1141, can you fix it thanks",
+       "cached": "hey wrong address on order 1149, can you fix it thanks",
+       "score": 0.906529,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.9,
+     "hits": 1132,
+     "correct": 1113,
+     "wrong": 19,
+     "entitySwaps": 19,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.566,
+     "wrongRate": 0.0095,
+     "billCut": 0.577308,
+     "baseline": 9.35802,
+     "bill": 3.955556,
+     "samples": [
+      {
+       "request": "URGENT: WHEN WILL I GET THE MONEY BACK FOR ORDER 1082 ?",
+       "cached": "urgent: when will i get the money back for order 1024",
+       "score": 0.912153,
+       "kind": "another entity"
+      },
+      {
+       "request": "hey wrong address on order 1141, can you fix it thanks",
+       "cached": "hey wrong address on order 1149, can you fix it thanks",
+       "score": 0.906529,
+       "kind": "another entity"
+      },
+      {
+       "request": "good morning, refund for order #1035 has not arrived thank you!",
+       "cached": "good morning, refund for order #1141 has not arrived thank you!",
+       "score": 0.902058,
+       "kind": "another entity"
+      },
+      {
+       "request": "hello, when will i get the money back for order 1006",
+       "cached": "HELLO, WHEN WILL I GET THE MONEY BACK FOR ORDER 1248",
+       "score": 0.903829,
+       "kind": "another entity"
+      },
+      {
+       "request": "please when will i get the money back for order 1205",
+       "cached": "please when will i get the money back for order 1087",
+       "score": 0.907047,
+       "kind": "another entity"
+      },
+      {
+       "request": "when will i get the money back for order 1148",
+       "cached": "when will i get the money back for order 1146",
+       "score": 0.911033,
+       "kind": "another entity"
+      }
+     ]
+    },
+    {
+     "tau": 0.92,
+     "hits": 1011,
+     "correct": 1011,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.5055,
+     "wrongRate": 0,
+     "billCut": 0.518036,
+     "baseline": 9.35802,
+     "bill": 4.510226,
+     "samples": []
+    },
+    {
+     "tau": 0.94,
+     "hits": 911,
+     "correct": 911,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.4555,
+     "wrongRate": 0,
+     "billCut": 0.467359,
+     "baseline": 9.35802,
+     "bill": 4.984466,
+     "samples": []
+    },
+    {
+     "tau": 0.96,
+     "hits": 833,
+     "correct": 833,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.4165,
+     "wrongRate": 0,
+     "billCut": 0.427786,
+     "baseline": 9.35802,
+     "bill": 5.354786,
+     "samples": []
+    },
+    {
+     "tau": 0.98,
+     "hits": 790,
+     "correct": 790,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.395,
+     "wrongRate": 0,
+     "billCut": 0.406003,
+     "baseline": 9.35802,
+     "bill": 5.558636,
+     "samples": []
+    }
+   ],
+   "digits": [
+    {
+     "tau": 0.5,
+     "hits": 1599,
+     "correct": 1587,
+     "wrong": 12,
+     "entitySwaps": 0,
+     "crossIntent": 12,
+     "vetoed": 324,
+     "hitRate": 0.7995,
+     "wrongRate": 0.006,
+     "billCut": 0.807652,
+     "baseline": 9.35802,
+     "bill": 1.799996,
+     "samples": [
+      {
+       "request": "hey part of order #1220 did not arrive asap",
+       "cached": "refund for order #1220 has not arrived asap",
+       "score": 0.512702,
+       "kind": "another question"
+      },
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, how do i use a discount code",
+       "cached": "good morning, how do i close my account permanently ?",
+       "score": 0.55642,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "delete my account please",
+       "cached": "please how do i update my address in my account",
+       "score": 0.514796,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time please",
+       "cached": "please what are the delivery fees",
+       "score": 0.576528,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.52,
+     "hits": 1593,
+     "correct": 1587,
+     "wrong": 6,
+     "entitySwaps": 0,
+     "crossIntent": 6,
+     "vetoed": 324,
+     "hitRate": 0.7965,
+     "wrongRate": 0.003,
+     "billCut": 0.80444,
+     "baseline": 9.35802,
+     "bill": 1.830056,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, how do i use a discount code",
+       "cached": "good morning, how do i close my account permanently ?",
+       "score": 0.55642,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time please",
+       "cached": "please what are the delivery fees",
+       "score": 0.576528,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time",
+       "cached": "good morning, do you chrage for delivery ?",
+       "score": 0.525069,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.54,
+     "hits": 1586,
+     "correct": 1579,
+     "wrong": 7,
+     "entitySwaps": 0,
+     "crossIntent": 7,
+     "vetoed": 321,
+     "hitRate": 0.793,
+     "wrongRate": 0.0035,
+     "billCut": 0.801055,
+     "baseline": 9.35802,
+     "bill": 1.861736,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, how do i use a discount code",
+       "cached": "good morning, how do i close my account permanently ?",
+       "score": 0.55642,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time please",
+       "cached": "please what are the delivery fees",
+       "score": 0.576528,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what are the delivery fees",
+       "cached": "good morning, what is the delivery time",
+       "score": 0.751036,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.56,
+     "hits": 1583,
+     "correct": 1577,
+     "wrong": 6,
+     "entitySwaps": 0,
+     "crossIntent": 6,
+     "vetoed": 318,
+     "hitRate": 0.7915,
+     "wrongRate": 0.003,
+     "billCut": 0.800003,
+     "baseline": 9.35802,
+     "bill": 1.871576,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time please",
+       "cached": "please what are the delivery fees",
+       "score": 0.576528,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what are the delivery fees",
+       "cached": "good morning, what is the delivery time",
+       "score": 0.751036,
+       "kind": "another question"
+      },
+      {
+       "request": "GOOD MORNING, WHAT ARE THE DELIVERY FEES",
+       "cached": "good morning, what is the delivery time",
+       "score": 0.751036,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.58,
+     "hits": 1572,
+     "correct": 1569,
+     "wrong": 3,
+     "entitySwaps": 0,
+     "crossIntent": 3,
+     "vetoed": 316,
+     "hitRate": 0.786,
+     "wrongRate": 0.0015,
+     "billCut": 0.794935,
+     "baseline": 9.35802,
+     "bill": 1.919006,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.6,
+     "hits": 1566,
+     "correct": 1564,
+     "wrong": 2,
+     "entitySwaps": 0,
+     "crossIntent": 2,
+     "vetoed": 313,
+     "hitRate": 0.783,
+     "wrongRate": 0.001,
+     "billCut": 0.792174,
+     "baseline": 9.35802,
+     "bill": 1.944836,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.62,
+     "hits": 1556,
+     "correct": 1555,
+     "wrong": 1,
+     "entitySwaps": 0,
+     "crossIntent": 1,
+     "vetoed": 309,
+     "hitRate": 0.778,
+     "wrongRate": 0.0005,
+     "billCut": 0.787853,
+     "baseline": 9.35802,
+     "bill": 1.985276,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.64,
+     "hits": 1545,
+     "correct": 1544,
+     "wrong": 1,
+     "entitySwaps": 0,
+     "crossIntent": 1,
+     "vetoed": 304,
+     "hitRate": 0.7725,
+     "wrongRate": 0.0005,
+     "billCut": 0.781893,
+     "baseline": 9.35802,
+     "bill": 2.041046,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.66,
+     "hits": 1534,
+     "correct": 1533,
+     "wrong": 1,
+     "entitySwaps": 0,
+     "crossIntent": 1,
+     "vetoed": 298,
+     "hitRate": 0.767,
+     "wrongRate": 0.0005,
+     "billCut": 0.776399,
+     "baseline": 9.35802,
+     "bill": 2.092466,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.68,
+     "hits": 1510,
+     "correct": 1510,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 283,
+     "hitRate": 0.755,
+     "wrongRate": 0,
+     "billCut": 0.764015,
+     "baseline": 9.35802,
+     "bill": 2.208356,
+     "samples": []
+    },
+    {
+     "tau": 0.7,
+     "hits": 1494,
+     "correct": 1494,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 273,
+     "hitRate": 0.747,
+     "wrongRate": 0,
+     "billCut": 0.756074,
+     "baseline": 9.35802,
+     "bill": 2.282666,
+     "samples": []
+    },
+    {
+     "tau": 0.72,
+     "hits": 1468,
+     "correct": 1468,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 261,
+     "hitRate": 0.734,
+     "wrongRate": 0,
+     "billCut": 0.74335,
+     "baseline": 9.35802,
+     "bill": 2.401736,
+     "samples": []
+    },
+    {
+     "tau": 0.74,
+     "hits": 1447,
+     "correct": 1447,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 247,
+     "hitRate": 0.7235,
+     "wrongRate": 0,
+     "billCut": 0.731995,
+     "baseline": 9.35802,
+     "bill": 2.507996,
+     "samples": []
+    },
+    {
+     "tau": 0.76,
+     "hits": 1420,
+     "correct": 1420,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 227,
+     "hitRate": 0.71,
+     "wrongRate": 0,
+     "billCut": 0.719207,
+     "baseline": 9.35802,
+     "bill": 2.627666,
+     "samples": []
+    },
+    {
+     "tau": 0.78,
+     "hits": 1391,
+     "correct": 1391,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 194,
+     "hitRate": 0.6955,
+     "wrongRate": 0,
+     "billCut": 0.704919,
+     "baseline": 9.35802,
+     "bill": 2.761376,
+     "samples": []
+    },
+    {
+     "tau": 0.8,
+     "hits": 1342,
+     "correct": 1342,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 169,
+     "hitRate": 0.671,
+     "wrongRate": 0,
+     "billCut": 0.681789,
+     "baseline": 9.35802,
+     "bill": 2.977826,
+     "samples": []
+    },
+    {
+     "tau": 0.82,
+     "hits": 1305,
+     "correct": 1305,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 145,
+     "hitRate": 0.6525,
+     "wrongRate": 0,
+     "billCut": 0.66366,
+     "baseline": 9.35802,
+     "bill": 3.147476,
+     "samples": []
+    },
+    {
+     "tau": 0.84,
+     "hits": 1263,
+     "correct": 1263,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 110,
+     "hitRate": 0.6315,
+     "wrongRate": 0,
+     "billCut": 0.644175,
+     "baseline": 9.35802,
+     "bill": 3.329816,
+     "samples": []
+    },
+    {
+     "tau": 0.86,
+     "hits": 1221,
+     "correct": 1221,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 73,
+     "hitRate": 0.6105,
+     "wrongRate": 0,
+     "billCut": 0.621667,
+     "baseline": 9.35802,
+     "bill": 3.540446,
+     "samples": []
+    },
+    {
+     "tau": 0.88,
+     "hits": 1174,
+     "correct": 1174,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 41,
+     "hitRate": 0.587,
+     "wrongRate": 0,
+     "billCut": 0.60066,
+     "baseline": 9.35802,
+     "bill": 3.737036,
+     "samples": []
+    },
+    {
+     "tau": 0.9,
+     "hits": 1115,
+     "correct": 1115,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 19,
+     "hitRate": 0.5575,
+     "wrongRate": 0,
+     "billCut": 0.570018,
+     "baseline": 9.35802,
+     "bill": 4.023776,
+     "samples": []
+    },
+    {
+     "tau": 0.92,
+     "hits": 1011,
+     "correct": 1011,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.5055,
+     "wrongRate": 0,
+     "billCut": 0.518036,
+     "baseline": 9.35802,
+     "bill": 4.510226,
+     "samples": []
+    },
+    {
+     "tau": 0.94,
+     "hits": 911,
+     "correct": 911,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.4555,
+     "wrongRate": 0,
+     "billCut": 0.467359,
+     "baseline": 9.35802,
+     "bill": 4.984466,
+     "samples": []
+    },
+    {
+     "tau": 0.96,
+     "hits": 833,
+     "correct": 833,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.4165,
+     "wrongRate": 0,
+     "billCut": 0.427786,
+     "baseline": 9.35802,
+     "bill": 5.354786,
+     "samples": []
+    },
+    {
+     "tau": 0.98,
+     "hits": 790,
+     "correct": 790,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.395,
+     "wrongRate": 0,
+     "billCut": 0.406003,
+     "baseline": 9.35802,
+     "bill": 5.558636,
+     "samples": []
+    }
+   ],
+   "names": [
+    {
+     "tau": 0.5,
+     "hits": 1598,
+     "correct": 1585,
+     "wrong": 13,
+     "entitySwaps": 0,
+     "crossIntent": 13,
+     "vetoed": 338,
+     "hitRate": 0.799,
+     "wrongRate": 0.0065,
+     "billCut": 0.807107,
+     "baseline": 9.35802,
+     "bill": 1.805096,
+     "samples": [
+      {
+       "request": "hey part of order #1220 did not arrive asap",
+       "cached": "refund for order #1220 has not arrived asap",
+       "score": 0.512702,
+       "kind": "another question"
+      },
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, how do i use a discount code",
+       "cached": "good morning, how do i close my account permanently ?",
+       "score": 0.55642,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, can you deliver to geramny",
+       "cached": "good morning, do you chrage for delivery ?",
+       "score": 0.533252,
+       "kind": "another question"
+      },
+      {
+       "request": "delete my account please",
+       "cached": "please how do i update my address in my account",
+       "score": 0.514796,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.52,
+     "hits": 1592,
+     "correct": 1585,
+     "wrong": 7,
+     "entitySwaps": 0,
+     "crossIntent": 7,
+     "vetoed": 329,
+     "hitRate": 0.796,
+     "wrongRate": 0.0035,
+     "billCut": 0.803895,
+     "baseline": 9.35802,
+     "bill": 1.835156,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, how do i use a discount code",
+       "cached": "good morning, how do i close my account permanently ?",
+       "score": 0.55642,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, can you deliver to geramny",
+       "cached": "good morning, do you chrage for delivery ?",
+       "score": 0.533252,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time please",
+       "cached": "please what are the delivery fees",
+       "score": 0.576528,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.54,
+     "hits": 1585,
+     "correct": 1578,
+     "wrong": 7,
+     "entitySwaps": 0,
+     "crossIntent": 7,
+     "vetoed": 331,
+     "hitRate": 0.7925,
+     "wrongRate": 0.0035,
+     "billCut": 0.80051,
+     "baseline": 9.35802,
+     "bill": 1.866836,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, how do i use a discount code",
+       "cached": "good morning, how do i close my account permanently ?",
+       "score": 0.55642,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time please",
+       "cached": "please what are the delivery fees",
+       "score": 0.576528,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what are the delivery fees",
+       "cached": "good morning, what is the delivery time",
+       "score": 0.751036,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.56,
+     "hits": 1582,
+     "correct": 1576,
+     "wrong": 6,
+     "entitySwaps": 0,
+     "crossIntent": 6,
+     "vetoed": 328,
+     "hitRate": 0.791,
+     "wrongRate": 0.003,
+     "billCut": 0.799458,
+     "baseline": 9.35802,
+     "bill": 1.876676,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what is the delivery time please",
+       "cached": "please what are the delivery fees",
+       "score": 0.576528,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      },
+      {
+       "request": "good morning, what are the delivery fees",
+       "cached": "good morning, what is the delivery time",
+       "score": 0.751036,
+       "kind": "another question"
+      },
+      {
+       "request": "GOOD MORNING, WHAT ARE THE DELIVERY FEES",
+       "cached": "good morning, what is the delivery time",
+       "score": 0.751036,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.58,
+     "hits": 1571,
+     "correct": 1568,
+     "wrong": 3,
+     "entitySwaps": 0,
+     "crossIntent": 3,
+     "vetoed": 326,
+     "hitRate": 0.7855,
+     "wrongRate": 0.0015,
+     "billCut": 0.79439,
+     "baseline": 9.35802,
+     "bill": 1.924106,
+     "samples": [
+      {
+       "request": "unsubscribe me from the plan please",
+       "cached": "please how do i unsubscribe from emails",
+       "score": 0.597148,
+       "kind": "another question"
+      },
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.6,
+     "hits": 1564,
+     "correct": 1562,
+     "wrong": 2,
+     "entitySwaps": 0,
+     "crossIntent": 2,
+     "vetoed": 326,
+     "hitRate": 0.782,
+     "wrongRate": 0.001,
+     "billCut": 0.791084,
+     "baseline": 9.35802,
+     "bill": 1.955036,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      },
+      {
+       "request": "hello, where is my order 1198",
+       "cached": "HI, WHERE IS MY REFUND FOR ORDER 1198 THANKS",
+       "score": 0.619904,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.62,
+     "hits": 1555,
+     "correct": 1554,
+     "wrong": 1,
+     "entitySwaps": 0,
+     "crossIntent": 1,
+     "vetoed": 321,
+     "hitRate": 0.7775,
+     "wrongRate": 0.0005,
+     "billCut": 0.787308,
+     "baseline": 9.35802,
+     "bill": 1.990376,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.64,
+     "hits": 1545,
+     "correct": 1544,
+     "wrong": 1,
+     "entitySwaps": 0,
+     "crossIntent": 1,
+     "vetoed": 315,
+     "hitRate": 0.7725,
+     "wrongRate": 0.0005,
+     "billCut": 0.781893,
+     "baseline": 9.35802,
+     "bill": 2.041046,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.66,
+     "hits": 1534,
+     "correct": 1533,
+     "wrong": 1,
+     "entitySwaps": 0,
+     "crossIntent": 1,
+     "vetoed": 309,
+     "hitRate": 0.767,
+     "wrongRate": 0.0005,
+     "billCut": 0.776399,
+     "baseline": 9.35802,
+     "bill": 2.092466,
+     "samples": [
+      {
+       "request": "where is my refund for order 1160 ?",
+       "cached": "urgent: where is my order 1160",
+       "score": 0.679879,
+       "kind": "another question"
+      }
+     ]
+    },
+    {
+     "tau": 0.68,
+     "hits": 1509,
+     "correct": 1509,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 293,
+     "hitRate": 0.7545,
+     "wrongRate": 0,
+     "billCut": 0.76347,
+     "baseline": 9.35802,
+     "bill": 2.213456,
+     "samples": []
+    },
+    {
+     "tau": 0.7,
+     "hits": 1493,
+     "correct": 1493,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 283,
+     "hitRate": 0.7465,
+     "wrongRate": 0,
+     "billCut": 0.755529,
+     "baseline": 9.35802,
+     "bill": 2.287766,
+     "samples": []
+    },
+    {
+     "tau": 0.72,
+     "hits": 1467,
+     "correct": 1467,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 267,
+     "hitRate": 0.7335,
+     "wrongRate": 0,
+     "billCut": 0.742805,
+     "baseline": 9.35802,
+     "bill": 2.406836,
+     "samples": []
+    },
+    {
+     "tau": 0.74,
+     "hits": 1445,
+     "correct": 1445,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 253,
+     "hitRate": 0.7225,
+     "wrongRate": 0,
+     "billCut": 0.730905,
+     "baseline": 9.35802,
+     "bill": 2.518196,
+     "samples": []
+    },
+    {
+     "tau": 0.76,
+     "hits": 1419,
+     "correct": 1419,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 232,
+     "hitRate": 0.7095,
+     "wrongRate": 0,
+     "billCut": 0.718662,
+     "baseline": 9.35802,
+     "bill": 2.632766,
+     "samples": []
+    },
+    {
+     "tau": 0.78,
+     "hits": 1390,
+     "correct": 1390,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 199,
+     "hitRate": 0.695,
+     "wrongRate": 0,
+     "billCut": 0.704374,
+     "baseline": 9.35802,
+     "bill": 2.766476,
+     "samples": []
+    },
+    {
+     "tau": 0.8,
+     "hits": 1341,
+     "correct": 1341,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 171,
+     "hitRate": 0.6705,
+     "wrongRate": 0,
+     "billCut": 0.681244,
+     "baseline": 9.35802,
+     "bill": 2.982926,
+     "samples": []
+    },
+    {
+     "tau": 0.82,
+     "hits": 1304,
+     "correct": 1304,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 147,
+     "hitRate": 0.652,
+     "wrongRate": 0,
+     "billCut": 0.663115,
+     "baseline": 9.35802,
+     "bill": 3.152576,
+     "samples": []
+    },
+    {
+     "tau": 0.84,
+     "hits": 1263,
+     "correct": 1263,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 110,
+     "hitRate": 0.6315,
+     "wrongRate": 0,
+     "billCut": 0.644175,
+     "baseline": 9.35802,
+     "bill": 3.329816,
+     "samples": []
+    },
+    {
+     "tau": 0.86,
+     "hits": 1221,
+     "correct": 1221,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 73,
+     "hitRate": 0.6105,
+     "wrongRate": 0,
+     "billCut": 0.621667,
+     "baseline": 9.35802,
+     "bill": 3.540446,
+     "samples": []
+    },
+    {
+     "tau": 0.88,
+     "hits": 1174,
+     "correct": 1174,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 41,
+     "hitRate": 0.587,
+     "wrongRate": 0,
+     "billCut": 0.60066,
+     "baseline": 9.35802,
+     "bill": 3.737036,
+     "samples": []
+    },
+    {
+     "tau": 0.9,
+     "hits": 1115,
+     "correct": 1115,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 19,
+     "hitRate": 0.5575,
+     "wrongRate": 0,
+     "billCut": 0.570018,
+     "baseline": 9.35802,
+     "bill": 4.023776,
+     "samples": []
+    },
+    {
+     "tau": 0.92,
+     "hits": 1011,
+     "correct": 1011,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.5055,
+     "wrongRate": 0,
+     "billCut": 0.518036,
+     "baseline": 9.35802,
+     "bill": 4.510226,
+     "samples": []
+    },
+    {
+     "tau": 0.94,
+     "hits": 911,
+     "correct": 911,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.4555,
+     "wrongRate": 0,
+     "billCut": 0.467359,
+     "baseline": 9.35802,
+     "bill": 4.984466,
+     "samples": []
+    },
+    {
+     "tau": 0.96,
+     "hits": 833,
+     "correct": 833,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.4165,
+     "wrongRate": 0,
+     "billCut": 0.427786,
+     "baseline": 9.35802,
+     "bill": 5.354786,
+     "samples": []
+    },
+    {
+     "tau": 0.98,
+     "hits": 790,
+     "correct": 790,
+     "wrong": 0,
+     "entitySwaps": 0,
+     "crossIntent": 0,
+     "vetoed": 0,
+     "hitRate": 0.395,
+     "wrongRate": 0,
+     "billCut": 0.406003,
+     "baseline": 9.35802,
+     "bill": 5.558636,
+     "samples": []
+    }
+   ]
+  }
+ },
+ "words": {
+  "ceiling": {
+   "hits": 978,
+   "hitRate": 0.978,
+   "billCut": 0.979097
+  },
+  "atChosen": {
+   "plain": {
+    "tau": 0.92,
+    "hits": 486,
+    "wrong": 0,
+    "entitySwaps": 0,
+    "crossIntent": 0,
+    "vetoed": 0,
+    "hitRate": 0.486,
+    "billCut": 0.494358,
+    "samples": []
+   },
+   "digits": {
+    "tau": 0.58,
+    "hits": 947,
+    "wrong": 453,
+    "entitySwaps": 434,
+    "crossIntent": 19,
+    "vetoed": 0,
+    "hitRate": 0.947,
+    "billCut": 0.94888,
+    "samples": [
+     {
+      "request": "hello, price of the blue kettle?",
+      "cached": "hello, price of the wool scarf?",
+      "score": 0.62443,
+      "kind": "another entity"
+     },
+     {
+      "request": "hi, what does shipping to austria cost ?",
+      "cached": "hey what does shipping to spain cost thank you!",
+      "score": 0.590819,
+      "kind": "another entity"
+     },
+     {
+      "request": "hello, how much is the pine desk ?",
+      "cached": "hi, how much is the oak desk",
+      "score": 0.665287,
+      "kind": "another entity"
+     },
+     {
+      "request": "hi, how long does delivery to austria take",
+      "cached": "urgent: how long does delivery to cyprus take",
+      "score": 0.680322,
+      "kind": "another entity"
+     },
+     {
+      "request": "what does the red kettle cost ?",
+      "cached": "HEY WHAT DOES THE BLUE KETTLE COST PLEASE",
+      "score": 0.705685,
+      "kind": "another entity"
+     },
+     {
+      "request": "hello, what does shipping to cyprus cost",
+      "cached": "hey what does shipping to spain cost thank you!",
+      "score": 0.617801,
+      "kind": "another entity"
+     }
+    ]
+   },
+   "names": {
+    "tau": 0.58,
+    "hits": 915,
+    "wrong": 15,
+    "entitySwaps": 6,
+    "crossIntent": 9,
+    "vetoed": 592,
+    "hitRate": 0.915,
+    "billCut": 0.91802,
+    "samples": [
+     {
+      "request": "urgent: is the red kettle sold out thanks",
+      "cached": "urgent: how much is the red kettle",
+      "score": 0.657768,
+      "kind": "another question"
+     },
+     {
+      "request": "hello, is the pine desk sold out please",
+      "cached": "hello, how much is the pine desk ?",
+      "score": 0.638443,
+      "kind": "another question"
+     },
+     {
+      "request": "IS THE PINE DESK IN STOCK ?",
+      "cached": "hello, how much is the pine desk ?",
+      "score": 0.584457,
+      "kind": "another question"
+     },
+     {
+      "request": "please is the wool scarf in stock",
+      "cached": "how much is the wool scarf ?",
+      "score": 0.602364,
+      "kind": "another question"
+     },
+     {
+      "request": "urgent: is the wool scarf in stock",
+      "cached": "how much is the wool scarf ?",
+      "score": 0.591427,
+      "kind": "another question"
+     },
+     {
+      "request": "can you deliver to spian ?",
+      "cached": "can you deliver to iatly asap",
+      "score": 0.699416,
+      "kind": "another entity"
+     }
+    ]
+   }
+  }
+ }
+}

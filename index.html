@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>semcache: a semantic cache for LLM calls, and the wrong answers it serves</title>
+    <meta name="description" content="A semantic cache measured on support requests its thresholds were never chosen on. An entity guard lets it cut 79.5% of the bill instead of 51.8%, until the questions name a product or a country: then it serves 453 wrong answers in 1,000." />
+    <meta property="og:title" content="semcache: a semantic cache for LLM calls, and the wrong answers it serves" />
+    <meta property="og:description" content="An entity guard lets a semantic cache cut 79.5% of the bill instead of 51.8%, until the questions name a product or a country: then it serves 453 wrong answers in 1,000." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://broikos-nikos.github.io/semcache/" />
+    <meta property="og:image" content="https://broikos-nikos.github.io/semcache/card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#080604" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23080604'/%3E%3Cpath d='M2 12 L6 8 L9 10 L14 3' stroke='%23ff6a00' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="masthead">
+      <p class="mono kicker">semcache</p>
+      <h1 id="headline"></h1>
+      <p class="lead" id="lead"></p>
+    </header>
+    <main>
+      <section class="panel" aria-labelledby="try-h">
+        <h2 id="try-h" class="mono label">Replay 2,000 requests the thresholds were not chosen on</h2>
+        <div class="controls">
+          <div class="chips" id="mode" role="group" aria-label="Which cache">
+            <button type="button" class="chip" data-mode="plain" aria-pressed="false">Similarity only</button>
+            <button type="button" class="chip" data-mode="digits" aria-pressed="true">Guard: numbers</button>
+            <button type="button" class="chip" data-mode="names" aria-pressed="false">Guard: numbers and names</button>
+          </div>
+          <label class="mono label" for="tau">Similarity threshold <output id="tau-out" class="mono"></output></label>
+          <input id="tau" type="range" min="0.5" max="0.98" step="0.02" />
+        </div>
+        <div id="readout" class="results"></div>
+        <figure class="chart"><svg id="chart" viewBox="0 0 640 260" role="img" aria-labelledby="chart-t"></svg><figcaption id="chart-t" class="note"></figcaption></figure>
+        <h3 class="mono label" id="wrong-h"></h3>
+        <ul id="wrong" class="wrong"></ul>
+      </section>
+
+      <section aria-labelledby="words-h">
+        <h2 id="words-h" class="mono label">Where the guard stops working</h2>
+        <div id="words" class="results"></div>
+        <p class="note" id="words-note"></p>
+        <ul id="words-ex" class="wrong"></ul>
+      </section>
+
+      <section class="panel" aria-labelledby="live-h">
+        <h2 id="live-h" class="mono label">Ask it something</h2>
+        <p class="note" style="margin-top:0">The cache below holds one answered request per question: order 1042, the blue kettle, delivery to germany. It uses the cache and the threshold chosen above.</p>
+        <div class="chips" id="ask" role="group" aria-label="Example requests"></div>
+        <label class="mono label" for="q">A request</label>
+        <input id="q" type="text" value="how much is the red kettle" autocomplete="off" spellcheck="false" />
+        <div id="live" class="verdict"></div>
+      </section>
+
+      <section aria-labelledby="fail-h">
+        <h2 id="fail-h" class="mono label">What this does not show</h2>
+        <div id="failures" class="failures"></div>
+      </section>
+    </main>
+    <footer class="foot mono">MIT licence. Synthetic requests. Source: <a href="https://github.com/Broikos-Nikos/semcache">github.com/Broikos-Nikos/semcache</a></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
